@@ -44,8 +44,9 @@
 
     .btn:hover {
       opacity: 1;
-      color: rgb(255, 255, 255);
-      background-color: rgb(248, 76, 76);
+      color: rgb(0, 0, 0);
+      background-color: #80ffea;
+      font-weight: 550;
     }
   }
 
@@ -152,9 +153,7 @@
 }
 
 ion-title {
-
-}
-
-.toolbar-container {
-  color: red;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
