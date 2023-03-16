@@ -9,35 +9,35 @@ export class Tab2Page {
 
   valor = 1;
 
-  btn1 = 1;
-  btn2 = 3;
-  btn3 = 6;
-  btn4 = 9;
-  btn5 = 12;
+  botao1 = 1;
+  botao2 = 3;
+  botao3 = 6;
+  botao4 = 9;
+  botao5 = 12;
 
   ponto = 0;
   ponto2 = 0
 
   constructor() {}
 
-  btnAdd1() {
-    this.valor = this.btn1;
+  botaoAdd1() {
+    this.valor = this.botao1;
   }
 
-  btnAdd2() {
-    this.valor = this.btn2;
+  botaoAdd2() {
+    this.valor = this.botao2;
   }
 
-  btnAdd3() {
-    this.valor = this.btn3;
+  botaoAdd3() {
+    this.valor = this.botao3;
   }
 
-  btnAdd4() {
-    this.valor = this.btn4;
+  botaoAdd4() {
+    this.valor = this.botao4;
   }
 
-  btnAdd5() {
-    this.valor = this.btn5;
+  botaoAdd5() {
+    this.valor = this.botao5;
   }
 
   addValue() {
@@ -57,7 +57,7 @@ export class Tab2Page {
   }
 
   clean() {
-    console.log("foi")
+    console.log("deu")
   }
 
 }
