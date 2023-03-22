@@ -1,10 +1,15 @@
-.container {
+* {
+  color: #fff;
+}
+
+.conteudo {
   width: 100%;
   height: 100%;
   padding: 20px;
   display: flex;
   flex-flow: column;
   justify-content: center;
+  background-color: #B3144E;
 
   .valor {
     width: 100%;
@@ -12,40 +17,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #222;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px 8px rgba(0, 0, 0, 0.2);
 
     h1 {
       margin: 0;
-      font-weight: 400;
+      font-weight: bold;
+      text-transform: uppercase;
 
       span {
         margin-left: 10px;
-        font-weight: 900;
+        font-weight: 400;
       }
     }
   }
 
-  .buttons {
+  .botoes {
     padding: 20px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
 
-    .btn {
+    .botao {
       padding: 15px 25px;
-      background-color: #555;
+      background-color: var(--ion-color-tertiary);
       border-radius: 10px;
       opacity: .6;
       color: #ffffff;
-
       font-size: 16px;
     }
 
-    .btn:hover {
+    .botao:hover {
       opacity: 1;
-      color: rgb(0, 0, 0);
-      background-color: #964343;
       font-weight: 550;
     }
   }
@@ -54,8 +55,9 @@
     width: 100%;
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
 
     .time {
       padding: 30px;
@@ -63,9 +65,6 @@
       flex-flow: column;
       justify-content: center;
       align-items: center;
-      background-color: #222;
-      border-radius: 10px;
-      box-shadow: 0 8px 15px 8px rgba(0, 0, 0, 0.2);
 
       h2 {
         margin: 0;
@@ -73,7 +72,7 @@
       }
 
       .botao-add, .botao-remove {
-        width: 100%;
+        width: 40px;
         height: 40px;
         border-radius: 10px;
         transition: ease-in-out .2s;
@@ -94,7 +93,7 @@
       }
 
       .botao-remove {
-        background-color: #ff0000;
+        background-color: #7a7a7a;
       }
 
       h1 {
@@ -104,32 +103,27 @@
     }
   }
 
-  .rounds {
+  .partidas {
     width: 100%;
     margin-top: 50px;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px 8px rgba(0, 0, 0, 0.2);
 
-    .header {
+    .titulo {
       width: 100%;
       height: 50px;
-      padding: 0 15px;
       display: flex;
       align-items: center;
-      background-color: #333;
-      border-radius: 10px 10px 0 0;
 
       h2 {
         margin: 0;
+        text-transform: uppercase;
+        font-weight: bold;
       }
     }
 
-    .round {
-      padding: 15px;
-      background-color: #222;
-      border-radius: 0 0 10px 10px;
+    .partida {
+      margin-top: 10px;
 
-      .team {
+      .time {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -144,10 +138,6 @@
           font-weight: 900;
         }
       }
-
-      .team:truco {
-        margin-bottom: 20px;
-      }
     }
   }
 }
@@ -157,3 +147,13 @@ ion-title {
   font-weight: 600;
   letter-spacing: 2px;
 }
+
+.botao {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.botao:hover {
+  opacity: 1;
+}
+

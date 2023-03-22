@@ -16,7 +16,10 @@ export class Tab2Page {
   botao5 = 12;
 
   ponto = 0;
-  ponto2 = 0
+  ponto2 = 0;
+
+  partida = 0;
+  partida2 = 0;
 
   constructor() {}
 
@@ -40,24 +43,49 @@ export class Tab2Page {
     this.valor = this.botao5;
   }
 
-  addValue() {
+  adicionaTime1() {
     this.ponto += this.valor;
+    if (this.ponto >= 12) {
+      this.partida += 1;
+      this.ponto = 0;
+      this.ponto2 = 0;
+    }
+    this.valor = 1;
   }
 
-  addValue2() {
+  adicionaTime2() {
     this.ponto2 += this.valor;
+    if (this.ponto2 >= 12) {
+      this.partida2 += 1;
+      this.ponto = 0;
+      this.ponto2 = 0;
+    }
+    this.valor = 1;
   }
 
-  removeValue() {
+  removeTime1() {
     this.ponto -= this.valor;
+    if (this.ponto < 0) {
+      this.ponto = 0;
+    }
+    this.valor = 1;
   }
 
-  removeValue2() {
+  removeTime2() {
     this.ponto2 -= this.valor;
+    if (this.ponto2 < 0) {
+      this.ponto2 = 0;
+    }
+    this.valor = 1;
   }
 
-  clean() {
-    console.log("deu")
+  limpaTudo() {
+    this.valor = 1;
+    this.ponto = 0;
+    this.ponto2 = 0;
+    this.partida = 0;
+    this.partida2 = 0;
   }
 
 }
+

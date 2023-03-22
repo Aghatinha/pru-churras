@@ -1,15 +1,15 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="aaa">
+  <ion-toolbar color="primary">
     <ion-title class="ion-text-center">Marcador de Truco</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="container">
+  <div class="conteudo">
     <div class="valor">
-      <h1>Valendo: <span>{{ valor }}</span></h1>
+      <h1>Vale: <span>{{ valor }}</span></h1>
     </div>
-    <div class="buttons">
+    <div class="botoes">
       <button class="botao" (click)="botaoAdd1()">{{ botao1 }}</button>
       <button class="botao" (click)="botaoAdd2()">{{ botao2 }}</button>
       <button class="botao" (click)="botaoAdd3()">{{ botao3 }}</button>
@@ -19,48 +19,48 @@
 
     <div class="times">
       <div class="time">
-        <h2>Time 1</h2>
-        <button class="botao-add" (click)="addValue()">
+        <h2>TIME 1</h2>
+        <button class="botao-add" (click)="adicionaTime1()">
           <ion-icon name="add-outline"></ion-icon>
         </button>
         <h1>{{ ponto }}</h1>
-        <button class="botao-remove" (click)="removeValue()">
+        <button class="botao-remove" (click)="removeTime1()">
           <ion-icon name="remove-outline"></ion-icon>
         </button>
       </div>
-      <h1>X</h1>
       <div class="time">
-        <h2>Time 2</h2>
-        <button class="botao-add" (click)="addValue2()">
+        <h2>TIME 2</h2>
+        <button class="botao-add" (click)="adicionaTime2()">
           <ion-icon name="add-outline"></ion-icon>
         </button>
         <h1>{{ ponto2 }}</h1>
-        <button class="botao-remove" (click)="removeValue2()">
+        <button class="botao-remove" (click)="removeTime2()">
           <ion-icon name="remove-outline"></ion-icon>
         </button>
       </div>
     </div>
 
-    <div class="rounds">
-      <div class="header">
+    <div class="partidas">
+      <div class="titulo">
         <h2>Partidas</h2>
       </div>
-      <div class="round">
-        <div class="team">
+      <div class="partida">
+        <div class="time">
           <h3>Time 1</h3>
-          <span>0</span>
+          <span>{{ partida }}</span>
         </div>
-        <div class="team">
+        <div class="time">
           <h3>Time 2</h3>
-          <span>0</span>
+          <span>{{ partida2 }}</span>
         </div>
       </div>
     </div>
   </div>
 </ion-content>
 
-<ion-footer >
-  <ion-toolbar color="dark" class="botao" (click)="clean()">
+<ion-footer>
+  <ion-toolbar color="tertiary" class="botao" (click)="limpaTudo()">
     <ion-title class="ion-text-center title">Limpar</ion-title>
   </ion-toolbar>
 </ion-footer>
+
