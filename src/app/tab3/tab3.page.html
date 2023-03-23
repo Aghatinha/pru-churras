@@ -7,12 +7,21 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-input>Tamanho</ion-input>
-  <img src="assets/dado.png" alt="">
-  <h1>Valor do Dado: <span>{{ valordado }}</span></h1>
 
-  <ion-button class="btn" class="botaolimpar">
-    Jogar Dado!
-  </ion-button>
+  <div class="container">
+    <div class="card">
+
+      <div class="input">
+        <ion-input>Tamanho:</ion-input>
+      </div>
+
+      <img src="assets/dado.png" alt="">
+
+      <h1>Valor do Dado: <span>{{ valordado }}</span></h1>
+
+      <ion-button class="btn" class="botaolimpar"> Jogar Dado! </ion-button>
+
+    </div>
+  </div>
 
 </ion-content>
